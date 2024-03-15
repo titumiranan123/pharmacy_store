@@ -2,6 +2,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 .font-sora {
   font-family: "Sora", sans-serif;
+}
+
+/* swiper js  */
+.swiper {
+  height: 350px !important;
+}
+.swiper-pagination-bullets {
+  margin-top: 50px !important;
 }
