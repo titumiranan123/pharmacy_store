@@ -8,9 +8,19 @@
 }
 
 /* swiper js  */
-.swiper {
+/* .swiper {
   height: 350px !important;
-}
+} */
 .swiper-pagination-bullets {
   margin-top: 50px !important;
+}
+
+.vaccine-thumb:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 65%;
+  background: linear-gradient(90deg, #03afe5 0%, rgba(3, 175, 229, 0) 100%);
+  left: 0;
+  top: 0;
 }
