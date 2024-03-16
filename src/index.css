@@ -14,7 +14,9 @@
 .swiper-pagination-bullets {
   margin-top: 50px !important;
 }
-
+.vaccine-thumb {
+  position: relative;
+}
 .vaccine-thumb:after {
   position: absolute;
   content: "";

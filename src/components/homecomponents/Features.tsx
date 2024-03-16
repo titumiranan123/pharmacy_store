@@ -1,17 +1,17 @@
 import React from "react";
 import Heading from "../utilitis/Heading";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import productImg from "../../assets/category/deltol.png";
-
-// import required modules
-import { Pagination, Navigation } from "swiper/modules";
-const Categorysection: React.FC = () => {
+import Productcard from "../utilitis/Productcard";
+const Features: React.FC = () => {
   return (
     <div className="max-w-[1240px] mx-auto">
-      <Heading title="Categorie" heading="Top Categories" />
+      <div>
+        <Heading title="Feature" heading="Feature Products" />
+      </div>
       <div className="mt-[80px]">
         <Swiper
           navigation={true}
@@ -34,7 +34,7 @@ const Categorysection: React.FC = () => {
               spaceBetween: 20,
             },
             "@1.50": {
-              slidesPerView: 5,
+              slidesPerView: 4,
               spaceBetween: 20,
             },
           }}
@@ -42,57 +42,39 @@ const Categorysection: React.FC = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <CategoryCard img={productImg} />
+            <Productcard />
           </SwiperSlide>
           <SwiperSlide>
-            <CategoryCard img={productImg} />
+            <Productcard />
           </SwiperSlide>
           <SwiperSlide>
-            <CategoryCard img={productImg} />
+            <Productcard />
           </SwiperSlide>
           <SwiperSlide>
-            <CategoryCard img={productImg} />
+            <Productcard />
           </SwiperSlide>
           <SwiperSlide>
-            <CategoryCard img={productImg} />
+            <Productcard />
           </SwiperSlide>
           <SwiperSlide>
-            <CategoryCard img={productImg} />
+            <Productcard />
           </SwiperSlide>
           <SwiperSlide>
-            <CategoryCard img={productImg} />
+            <Productcard />
           </SwiperSlide>
           <SwiperSlide>
-            <CategoryCard img={productImg} />
+            <Productcard />
           </SwiperSlide>
           <SwiperSlide>
-            <CategoryCard img={productImg} />
+            <Productcard />
           </SwiperSlide>
           <SwiperSlide>
-            <CategoryCard img={productImg} />
+            <Productcard />
           </SwiperSlide>
         </Swiper>
       </div>
     </div>
   );
 };
-interface cardprop {
-  img: string;
-}
-const CategoryCard: React.FC<cardprop> = ({ img }) => {
-  return (
-    <div className="w-[250px] flex flex-col justify-center items-center gap-5 bg-cyan-100 h-[300px] rounded-[20px]">
-      <div>
-        <p className="text-[14px] text-orange-500 font-sora font-[600] text-center">
-          FLAT 15% OFF
-        </p>
-        <p className="text-center text-black font-[600] font-sora text-[18px]">
-          Medicine
-        </p>
-      </div>
-      <img src={img} alt="" />
-    </div>
-  );
-};
 
-export default Categorysection;
+export default Features;
