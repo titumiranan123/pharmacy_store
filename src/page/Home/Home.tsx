@@ -5,6 +5,8 @@ import Arrivals from "../../components/homecomponents/Arrivals";
 import add from "../../assets/add/ad.jpg";
 import Features from "../../components/homecomponents/Features";
 import BestSeller from "../../components/homecomponents/BestSeller";
+import Offers from "../../components/homecomponents/Offers";
+import Footer from "../../components/sharecomponents/Footer";
 const Home: React.FC = () => {
   return (
     <div className="">
@@ -17,9 +19,11 @@ const Home: React.FC = () => {
         </a>
       </div>
       <Features />
-      <div className="bg-[#03afe5] mt-32">
+      <div className="bg-[#03afe5] mt-32 mb-32">
         <BestSeller />
       </div>
+      <Offers />
+      <Footer />
     </div>
   );
 };

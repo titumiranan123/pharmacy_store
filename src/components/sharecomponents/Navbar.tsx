@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
         </div>
       </div>
       {open && (
-        <div className="  absolute grid grid-cols-3 lg:hidden right-0 top-0 h-screen w-full   ">
+        <div className="  absolute grid grid-cols-3 z-50 lg:hidden right-0 top-0 h-screen w-full   ">
           <div className=" col-span-1 h-screen bg-black  bg-opacity-60"></div>
           <div className="bg-black col-span-2 p-6 border-l-4 border-orange-500">
             <div className="flex justify-between items-center ">
