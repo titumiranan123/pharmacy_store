@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="flex mx-auto   flex-col">
-          <h1 className="text-white text-[20px] font-bold mb-5">Company </h1>
+          <h1 className="text-white text-[20px] font-bold ">Company </h1>
           <div className="flex flex-col gap-2 text-[16px]  font-[600]">
             <p className="hover:text-white text-[#9f9f9f] duration-100 transition hover:translate-x-3">
               Home{" "}

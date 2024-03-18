@@ -26,3 +26,9 @@
   left: 0;
   top: 0;
 }
+.bg-img {
+  background-image: url("./assets/breadcrumb-bg.jpg");
+  height: 250px;
+
+  background-size: cover;
+}

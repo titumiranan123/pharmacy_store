@@ -7,6 +7,8 @@ import Features from "../../components/homecomponents/Features";
 import BestSeller from "../../components/homecomponents/BestSeller";
 import Offers from "../../components/homecomponents/Offers";
 import Footer from "../../components/sharecomponents/Footer";
+import Exclusive from "../../components/sharecomponents/Exclusive";
+import RecentBlog from "../../components/homecomponents/RecentBlog";
 const Home: React.FC = () => {
   return (
     <div className="">
@@ -23,7 +25,8 @@ const Home: React.FC = () => {
         <BestSeller />
       </div>
       <Offers />
-      <Footer />
+      <RecentBlog />
+      <Exclusive />
     </div>
   );
 };
