@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
   return (
     <div className="max-w-[1240px] mx-auto">
       <Pageheader />
-      <div className="mt-32 mb-32 flex justify-between max-w-[800px] mx-auto items-center gap-10">
+      <div className="mt-32 mb-32 flex lg:flex-nowrap flex-wrap md:justify-between justify-center max-w-[800px] mx-auto items-center gap-10 lg:ms-0 md:ms-10 md:p-0 ">
         <div className="flex justify-center items-center gap-5 flex-col ">
           <div className="bg-blue-600 rounded-full w-12 h-12 p-2 flex justify-center items-center ">
             <FaLocationArrow className="text-white text-3xl -rotate-45" />
@@ -47,12 +47,11 @@ const Contact: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="mt-32 mb-32 grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <div className="mt-32 mb-32 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:ms-0 md:ms-10">
         <div>
           <iframe
+            className="md:w-[600px] h-[450px] md:p-0 p-4 w-[400px] "
             src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d29216.515059408644!2d90.35680596140489!3d23.745083421976947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3755b8b33cffc3fb%3A0x4a826f475fd312af!2sDhanmondi%2C%20Dhaka%201205!3m2!1d23.746149499999998!2d90.3742307!5e0!3m2!1sen!2sbd!4v1710720587712!5m2!1sen!2sbd"
-            width="600"
-            height="450"
             style={{ border: 0 }}
             // allowFullScreen=" "
             loading="lazy"

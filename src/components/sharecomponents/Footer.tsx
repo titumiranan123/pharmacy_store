@@ -6,10 +6,10 @@ import payoneer from "../../assets/payoneer.png";
 import master from "../../assets/maser.png";
 const Footer: React.FC = () => {
   return (
-    <div className="bg-[#191919]">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-[1240px] mx-auto py-20">
+    <div className="bg-[#191919] ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-[1240px] gap-5 mx-auto lg:py-20 p-10">
         <div className="flex  gap-4 flex-col">
-          <img src={mobileLogo} alt="" />
+          <img className="w-[200px]" src={mobileLogo} alt="" />
           <p className="text-[#9f9f9f]">
             It helps designers plan out where the content <br /> will sit , the
             content to be written and apporved .
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
             <FaLinkedin className="bg-white text-4xl text-[#191919] rounded-full p-2" />
           </div>
         </div>
-        <div className="flex   mx-auto flex-col">
+        <div className="flex   md:mx-auto flex-col">
           <h1 className="text-white text-[20px] font-bold mb-5">Services </h1>
           <div className="flex flex-col gap-2 text-[16px] text-[#9f9f9f] font-[600]">
             <p className="hover:text-white text-[#9f9f9f] duration-100 transition hover:translate-x-3">
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="flex mx-auto   flex-col">
+        <div className="flex lg:mx-auto   flex-col">
           <h1 className="text-white text-[20px] font-bold ">Company </h1>
           <div className="flex flex-col gap-2 text-[16px]  font-[600]">
             <p className="hover:text-white text-[#9f9f9f] duration-100 transition hover:translate-x-3">
@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-center gap-2 mx-auto  flex-col">
+        <div className="flex justify-center gap-2 md:mx-auto  flex-col">
           <img className="w-28 h-10" src={payoneer} alt="" />
           <img className="w-28 h-10" src={master} alt="" />
           <img className="w-28 h-10" src={pay} alt="" />

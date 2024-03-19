@@ -3,6 +3,8 @@ import Main from "../layout/Main";
 import Home from "../page/Home/Home";
 import About from "../page/About/About";
 import Contact from "../page/Contact/Contact";
+import Blogs from "../page/blog/Blogs";
+import Shop from "../page/Shop/Shop";
 
 export const routes = createBrowserRouter([
   {
@@ -19,11 +21,11 @@ export const routes = createBrowserRouter([
       },
       {
         path: "/shop",
-        element: <Home />,
+        element: <Shop />,
       },
       {
-        path: "/blog",
-        element: <Home />,
+        path: "/blog-classic",
+        element: <Blogs />,
       },
       {
         path: "/contact",

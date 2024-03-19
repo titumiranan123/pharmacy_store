@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
         <CustomNav href="/" title="Home" className=" " />
         <CustomNav href="/about" title="About" className=" " />
         <CustomNav href="/shop" title="Shop" className=" " />
-        <CustomNav href="/blog" title="Blog" className=" " />
+        <CustomNav href="/blog-classic" title="Blog" className=" " />
         <CustomNav href="/contact" title="Contact" className=" " />
       </div>
       <div className="flex justify-center items-center gap-5">
@@ -111,7 +111,7 @@ const Navbar: React.FC = () => {
                 <CustomNav href="/shop" title="Shop" className=" " />
                 <span className="w-full h-[1px] bg-white"></span>
 
-                <CustomNav href="/blog" title="Blog" className=" " />
+                <CustomNav href="/blog-classic" title="Blog" className=" " />
                 <span className="w-full h-[1px] bg-white"></span>
 
                 <CustomNav href="/contact" title="Contact" className=" " />
