@@ -5,14 +5,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import productImg from "../../assets/category/deltol.png";
-
+import category from "./style/Category.module.css";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 const Categorysection: React.FC = () => {
   return (
-    <div className="max-w-[1240px] mx-auto">
+    <div className="max-w-[1240px] mx-auto mt-[140px]">
       <Heading title="Categorie" heading="Top Categories" />
-      <div className="mt-[80px]">
+      <div className="mt-[80px] flex justify-center items-center ">
         <Swiper
           navigation={true}
           slidesPerView={1}
@@ -23,7 +23,6 @@ const Categorysection: React.FC = () => {
           breakpoints={{
             "@0.00": {
               slidesPerView: 1,
-              spaceBetween: 10,
             },
             "@0.75": {
               slidesPerView: 2,
@@ -39,7 +38,7 @@ const Categorysection: React.FC = () => {
             },
           }}
           modules={[Pagination, Navigation]}
-          className="mySwiper"
+          className={`${category.category}`}
         >
           <SwiperSlide>
             <CategoryCard img={productImg} />

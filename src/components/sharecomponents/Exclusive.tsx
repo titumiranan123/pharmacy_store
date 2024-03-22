@@ -3,7 +3,7 @@ import play from "../../assets/play-store.png";
 import apple from "../../assets/apple-store.png";
 const Exclusive: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 gap-4 mt-32 mb-32 max-w-[1240px] mx-auto md:grid-cols-1 lg:grid-cols-3">
+    <div className="grid grid-cols-1 md:p-0 p-4 gap-4 mt-32 mb-32 max-w-[1240px] mx-auto md:grid-cols-1 lg:grid-cols-3">
       <div className="bg-cyan-200 p-10 flex gap-5 flex-col">
         <h1 className="text-[24px] font-bold text-black">
           Exclusive Offers for You

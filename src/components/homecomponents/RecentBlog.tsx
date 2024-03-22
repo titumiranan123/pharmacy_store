@@ -28,7 +28,7 @@ const RecentBlog: React.FC = () => {
           </h1>
           <p className="text-6xl font-bold text-white">Recent Blog</p>
         </div>
-        <div className="flex justify-center gap-4 items-center">
+        <div className="flex justify-center gap-4 items-center md:flex-nowrap flex-wrap p-4">
           {data.map((data, indx) => (
             <Blogcard
               key={indx}
