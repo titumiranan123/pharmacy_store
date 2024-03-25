@@ -5,7 +5,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import productImg from "../../assets/category/deltol.png";
-import category from "./style/Category.module.css";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 const Categorysection: React.FC = () => {
@@ -38,7 +37,7 @@ const Categorysection: React.FC = () => {
             },
           }}
           modules={[Pagination, Navigation]}
-          className={`${category.category}`}
+          className={``}
         >
           <SwiperSlide>
             <CategoryCard img={productImg} />

@@ -5,7 +5,8 @@ import About from "../page/About/About";
 import Contact from "../page/Contact/Contact";
 import Blogs from "../page/blog/Blogs";
 import Shop from "../page/Shop/Shop";
-
+import Wishlist from "../page/Wishlist/Wishlist";
+import Checkout from "../page/Checkout/Checkout";
 export const routes = createBrowserRouter([
   {
     path: "/",
@@ -24,8 +25,16 @@ export const routes = createBrowserRouter([
         element: <Shop />,
       },
       {
+        path: "/wishlist",
+        element: <Wishlist />,
+      },
+      {
         path: "/blog-classic",
         element: <Blogs />,
+      },
+      {
+        path: "/checkout",
+        element: <Checkout />,
       },
       {
         path: "/contact",
